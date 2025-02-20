@@ -1,0 +1,181 @@
+/* body {
+    height: 400vh;
+}
+.container {
+    width: 20vw;
+    margin: 6rem auto 16rem;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 400vh;
+    /* スクロールできるように */
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    isolation: isolate;
+}
+
+.container p {
+  max-width: 300px; 
+  width: 90%; 
+  text-align: center;
+}
+
+.one h2,
+.one p {
+    margin-left: 32%;
+}
+
+.two h2,
+.two p {
+    margin-left: -78%;
+}
+
+.three h2,
+.three p {
+    margin-left: 17%;
+}
+
+.four h2,
+.four p {
+    margin-left: -8%;
+}
+
+
+.one::before,
+.two::before,
+.three::before,
+.four::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.one::before {
+    background-image: url('/stickybg.svg');
+}
+
+.two::before {
+    background-image: url('/stickybg2.svg');
+}
+
+.three::before {
+    background-image: url('/stickybg3.svg');
+}
+
+.four::before {
+    background-image: url('/stickybg4.svg');
+}
+
+/* .one { background: rgba(255, 100, 100, 0.9); }
+  .two { background: rgba(100, 255, 100, 0.9); }
+  .three { background: rgba(100, 100, 255, 0.9); }
+  .four { background: rgba(255, 255, 100, 0.9); }
+
+
+.one::before {
+    content: "";
+    background-image: url(./stickybg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    top: -3%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.two::before {
+    content: "";
+    background-image: url(/stickybg2.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.three::before {
+    content: "";
+    background-image: url(/stickybg3.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.four::before {
+    content: "";
+    background-image: url(/stickybg4.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+} */
+
+
+h2 {
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    z-index: 3;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: .8rem;
+    z-index: 3;
+    margin-bottom: 1rem;
+    color: #000;
+}
